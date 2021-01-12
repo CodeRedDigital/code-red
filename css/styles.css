@@ -1,0 +1,43 @@
+:root {
+    /* defining scales for sizing elements */
+    --ratio: 1.25;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+    --clear-header: calc(var(--s3) + 1.5rem + 1rem);
+
+    /* defining fonts to be used */
+    --serif: Georgia, serif;
+    --sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+    --monospace: "Lucida Console", Monaco, monospace;
+  
+    /* defining the colours to be used */
+    --red-colour: rgba(208, 2, 27, 1); /* Lava #D0021B */
+    --blue-colour: rgba(39, 111, 191, 1); /* Celtic Blue #276FBF */
+    --green-colour: rgba(6, 167, 125, 1); /* Green Munsell #06A77D */
+    --white-colour: rgba(250, 249, 249, 1); /* Cultured #FAF9F9 */
+    --black-colour: rgba(11, 9, 9, 1); /* Rich Black Fogra #0B0909 */
+    --yellow-colour: rgba(255, 191, 0, 1); /* Amber #FFBF00 */
+    --light-grey-colour: rgba(227, 222, 222, 1); /* Light Grey #E3DEDE */
+    --mid-grey-colour: rgba(153, 133, 133, 1); /* Mid Grey #998585 */
+    --dark-grey-colour: rgba(67, 56, 56, 1); /* Dark Grey #433838 */
+    /* defining the 90% opacity colours to be used */
+    --red-90: rgba(208, 2, 27, 0.9); /* Lava #D0021B */
+    --blue-90: rgba(39, 111, 191, 0.9); /* Celtic Blue #276FBF */
+    --green-90: rgba(6, 167, 125, 0.9); /* Green Munsell #06A77D */
+    --white-90: rgba(250, 249, 249, 0.9); /* Cultured #FAF9F9 */
+    --black-90: rgba(11, 9, 9, 0.9); /* Rich Black Fogra #0B0909 */
+    --yellow-90: rgba(255, 191, 0, 0.9); /* Amber #FFBF00 */
+    --light-grey-90: rgba(227, 222, 222, 0.9); /* Light Grey #E3DEDE */
+    --mid-grey-90: rgba(153, 133, 133, 0.9); /* Mid Grey #998585 */
+    --dark-grey-90: rgba(67, 56, 56, 0.9); /* Dark Grey #433838 */
+}
+}
