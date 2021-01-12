@@ -2,8 +2,6 @@
     display:block;
     width: 60px;
     height: 45px;
-    position: relative;
-    margin: 50px auto;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -11,9 +9,9 @@
   
   #hamburger div {
     position: absolute;
-    height: 9px;
+    height: var(--s-4);
     width: 100%;
-    background: #d3531a;
+    background: var(--white-colour);
     border-radius: 9px;
     opacity: 1;
     left: 0;
