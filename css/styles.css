@@ -75,21 +75,16 @@ header nav ul {
     color: #FAF9F9;
     font-family: 'Courier New';
     font-weight: 700;
-    font-size: 2em;
-    margin: 23px 0 0 -27px;
-    padding: 35px 10px 10px 33px; 
+    font-size: var(--s2);
     border-radius: 0 0 23px 0;
     max-height: 0;
-    transition: max-height 2s ease;
+    transition: max-height 0.5s ease;
     overflow: hidden;
-    margin-top: -40px;
-    margin-left: -32px;
     position: absolute;
-    top: 105px;
+    top: var(--s4);
 }
 
 header li {
-    margin-left: ;
     margin: 0 var(--s-1);
 }
 
