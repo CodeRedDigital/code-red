@@ -76,7 +76,6 @@ header nav ul {
     font-family: 'Courier New';
     font-weight: 700;
     font-size: 2em;
-    list-style: none;
     margin: 23px 0 0 -27px;
     padding: 35px 10px 10px 33px; 
     border-radius: 0 0 23px 0;
@@ -87,6 +86,15 @@ header nav ul {
     margin-left: -32px;
     position: absolute;
     top: 105px;
+}
+
+header li {
+    margin-left: ;
+    margin: 0 var(--s-1);
+}
+
+header a {
+    color: var(--white-colour);
 }
 
 #toggleMenu:checked ~ ul {
