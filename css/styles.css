@@ -118,11 +118,19 @@ article {
 
 
 /* footer */
-
+ 
 footer {
     color: var(--white-colour);
     background-color: var(--black-colour);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+footer p {
+    text-align: center;
+    padding: 0 4px;
+}  
 
 footer p a {
     color: var(--yellow-colour);
@@ -140,7 +148,7 @@ footer p a:hover {
   
 .social-icons a svg {
     fill: var(--red-colour);
-    height: var(--s4);
+    height: var(--s3);
 }
 
 .social-icons a:hover svg {
