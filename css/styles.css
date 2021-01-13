@@ -96,7 +96,10 @@ header a {
     max-height: 500px;
     transition: max-height 2s ease;
   }
+
   
+/* main and content */
+
 main {
     background-color: var(--green-colour);
 }
@@ -112,3 +115,15 @@ article {
     padding: var(--s2);
     background-color: var(--white-90);
 }  
+
+
+/* footer */
+
+.social-icons a svg {
+    fill: var(--red-colour);
+    height: var(--s4);
+}
+
+.social-icons a:hover svg {
+    fill: var(--white-colour);
+}
