@@ -119,6 +119,25 @@ article {
 
 /* footer */
 
+footer {
+    color: var(--white-colour);
+    background-color: var(--black-colour);
+}
+
+footer p a {
+    color: var(--yellow-colour);
+}
+
+footer p a:hover {
+    color: var(--black-colour);
+    background-color: var(--yellow-colour);
+}
+
+.social-icons ul li {
+    display: inline;
+    padding: var(--s-5);
+}
+  
 .social-icons a svg {
     fill: var(--red-colour);
     height: var(--s4);
