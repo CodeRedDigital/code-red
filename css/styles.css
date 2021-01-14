@@ -114,6 +114,7 @@ article {
     margin: 0 auto;
     padding: var(--s2);
     background-color: var(--white-90);
+    border-radius: 0 0 var(--s4) 0;
 }  
 
 
