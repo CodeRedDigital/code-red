@@ -1,6 +1,6 @@
 #hamburger {
     display:block;
-    width: 60px;
+    width: 45px;
     height: 45px;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
@@ -9,7 +9,7 @@
   
   #hamburger div {
     position: absolute;
-    height: var(--s-4);
+    height: var(--s-5);
     width: 100%;
     background: var(--white-colour);
     border-radius: 9px;
@@ -24,11 +24,11 @@
   }
   
   #hamburger div:nth-child(2),#hamburger div:nth-child(3) {
-    top: 18px;
+    top: 15px;
   }
   
   #hamburger div:nth-child(4) {
-    top: 36px;
+    top: 30px;
   }
   
   #hamburger span, #toggleMenu {
@@ -36,7 +36,7 @@
   }
   
   #toggleMenu:checked ~ #hamburger div:nth-child(1) {
-    top: 18px;
+    top: 15px;
     width: 0%;
     left: 50%;
   }
@@ -50,7 +50,7 @@
   }
   
   #toggleMenu:checked ~ #hamburger div:nth-child(4) {
-    top: 18px;
+    top: 15px;
     width: 0%;
     left: 50%;
   }
