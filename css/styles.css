@@ -1,6 +1,7 @@
 :root {
     /* defining scales for sizing elements */
     --ratio: 1.2;
+    --s-6: calc(var(--s-5) / var(--ratio));
     --s-5: calc(var(--s-4) / var(--ratio));
     --s-4: calc(var(--s-3) / var(--ratio));
     --s-3: calc(var(--s-2) / var(--ratio));
@@ -12,6 +13,7 @@
     --s3: calc(var(--s2) * var(--ratio));
     --s4: calc(var(--s3) * var(--ratio));
     --s5: calc(var(--s4) * var(--ratio));
+    --s6: calc(var(--s5) * var(--ratio));
     --clear-header: calc(var(--s3) + 1.5rem + 1rem);
 
     /* defining fonts to be used */
@@ -41,8 +43,8 @@
     --dark-grey-90: rgba(67, 56, 56, 0.9); /* Dark Grey #433838 */
 
     /* filters */
-    --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.25));
-    --large-drop-shadow: drop-shadow(0px 10px 20px rgba(11, 9, 9, 0.25));
+    --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.5));
+    --large-drop-shadow: drop-shadow(0px 10px 20px rgba(11, 9, 9, 0.5));
 }
 
 /* HTML Element styles */
@@ -118,7 +120,7 @@ header {
 header nav {
     max-width: 1280px;
     margin: 0 auto;
-    padding: var(--s-5) 4px;
+    padding: var(--s-6);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,9 +132,9 @@ header nav ul {
     font-family: 'Courier New';
     font-weight: 700;
     font-size: var(--s2);
-    border-radius: 0 0 23px 0;
+    border-radius: 0 0 var(--s1) 0;
     max-height: 0;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.75s ease;
     overflow: hidden;
     position: absolute;
     top: var(--s4);
@@ -148,7 +150,7 @@ header a {
 
 #toggleMenu:checked ~ ul {
     max-height: 500px;
-    transition: max-height 2s ease;
+    transition: max-height 0.75s ease;
     filter: var(--normal-drop-shadow);
   }
 
@@ -170,7 +172,7 @@ article > * {
 }
   
 .page-header {
-    padding: var(--s2) 4px;
+    padding: var(--s2) var(--s-6);
     line-height: 1.3;
     background-color: var(--green-colour);
 }  
@@ -197,7 +199,7 @@ footer {
 
 footer p {
     text-align: center;
-    padding: 0 4px;
+    padding: 0 var(--s-6);
     font-size: var(--s-1);
 }  
 
