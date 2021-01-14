@@ -1,6 +1,6 @@
 :root {
     /* defining scales for sizing elements */
-    --ratio: 1.25;
+    --ratio: 1.2;
     --s-5: calc(var(--s-4) / var(--ratio));
     --s-4: calc(var(--s-3) / var(--ratio));
     --s-3: calc(var(--s-2) / var(--ratio));
@@ -39,6 +39,56 @@
     --light-grey-90: rgba(227, 222, 222, 0.9); /* Light Grey #E3DEDE */
     --mid-grey-90: rgba(153, 133, 133, 0.9); /* Mid Grey #998585 */
     --dark-grey-90: rgba(67, 56, 56, 0.9); /* Dark Grey #433838 */
+}
+
+/* HTML Element styles */
+
+html {
+    font-family: var(--sans-serif);
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--serif);
+}
+
+h1, h4 {
+    color: var(--red-colour);
+}
+
+h2, h5 {
+    color: var(--blue-colour);
+}
+
+h3, h6 {
+    color: var(--green-colour);
+}
+
+h1 {
+    font-size: var(--s5);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--s4);
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--s3);
+    font-weight: 700;
+}
+h4 {
+    font-size: var(--s2);
+    font-weight: 700;
+}
+h5 {
+    font-size: var(--s1);
+    font-weight: 700;
+}
+h6 {
+    font-size: var(--s-1);
+    font-weight: 700;
 }
 
 .hidden {
@@ -113,6 +163,7 @@ article {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--s2) 4px;
+    line-height: 1.3;
 }  
 
 .headings {
@@ -135,6 +186,7 @@ footer {
 footer p {
     text-align: center;
     padding: 0 4px;
+    font-size: var(--s-1);
 }  
 
 footer p a {
