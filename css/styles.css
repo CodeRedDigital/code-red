@@ -138,6 +138,7 @@ header nav ul {
     overflow: hidden;
     position: absolute;
     top: var(--s4);
+    filter: var(--normal-drop-shadow);
 }
 
 header li {
@@ -151,7 +152,6 @@ header a {
 #toggleMenu:checked ~ ul {
     max-height: 500px;
     transition: max-height 0.75s ease;
-    filter: var(--normal-drop-shadow);
   }
 
   
