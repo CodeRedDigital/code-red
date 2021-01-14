@@ -39,6 +39,10 @@
     --light-grey-90: rgba(227, 222, 222, 0.9); /* Light Grey #E3DEDE */
     --mid-grey-90: rgba(153, 133, 133, 0.9); /* Mid Grey #998585 */
     --dark-grey-90: rgba(67, 56, 56, 0.9); /* Dark Grey #433838 */
+
+    /* filters */
+    --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.25));
+    --large-drop-shadow: drop-shadow(0px 10px 20px rgba(11, 9, 9, 0.25));
 }
 
 /* HTML Element styles */
@@ -114,7 +118,7 @@ header {
 header nav {
     max-width: 1280px;
     margin: 0 auto;
-    padding: var(--s-2) 0;
+    padding: var(--s-5) 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,6 +149,7 @@ header a {
 #toggleMenu:checked ~ ul {
     max-height: 500px;
     transition: max-height 2s ease;
+    filter: var(--normal-drop-shadow);
   }
 
   
