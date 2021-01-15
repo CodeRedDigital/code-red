@@ -1,6 +1,7 @@
 :root {
     /* defining scales for sizing elements */
     --ratio: 1.2;
+    --s-7: calc(var(--s-6) / var(--ratio));
     --s-6: calc(var(--s-5) / var(--ratio));
     --s-5: calc(var(--s-4) / var(--ratio));
     --s-4: calc(var(--s-3) / var(--ratio));
@@ -14,6 +15,7 @@
     --s4: calc(var(--s3) * var(--ratio));
     --s5: calc(var(--s4) * var(--ratio));
     --s6: calc(var(--s5) * var(--ratio));
+    --s7: calc(var(--s6) * var(--ratio));
     --clear-header: calc(var(--s3) + 1.5rem + 1rem);
 
     /* defining fonts to be used */
@@ -22,25 +24,26 @@
     --monospace: "Lucida Console", Monaco, monospace;
   
     /* defining the colours to be used */
-    --red-colour: rgba(208, 2, 27, 1); /* Lava #D0021B */
-    --blue-colour: rgba(39, 111, 191, 1); /* Celtic Blue #276FBF */
-    --green-colour: rgba(6, 167, 125, 1); /* Green Munsell #06A77D */
-    --white-colour: rgba(250, 249, 249, 1); /* Cultured #FAF9F9 */
-    --black-colour: rgba(11, 9, 9, 1); /* Rich Black Fogra #0B0909 */
-    --yellow-colour: rgba(255, 191, 0, 1); /* Amber #FFBF00 */
-    --light-grey-colour: rgba(227, 222, 222, 1); /* Light Grey #E3DEDE */
-    --mid-grey-colour: rgba(153, 133, 133, 1); /* Mid Grey #998585 */
-    --dark-grey-colour: rgba(67, 56, 56, 1); /* Dark Grey #433838 */
+    /* Colour names from https://chir.ag/projects/name-that-color */
+    --monza-colour: rgba(208, 2, 27, 1); /* Monza #D0021B */
+    --mariner-colour: rgba(39, 111, 191, 1); /* Mariner #276FBF */
+    --niagara-colour: rgba(6, 167, 125, 1); /* Niagara #06A77D */
+    --alabaster-colour: rgba(250, 249, 249, 1); /* Alabaster #FAF9F9 */
+    --cod-gray-colour: rgba(11, 9, 9, 1); /* Cod Gray #0B0909 */
+    --amber-colour: rgba(255, 191, 0, 1); /* Amber #FFBF00 */
+    --bon-jour-colour: rgba(227, 222, 222, 1); /* Bon Jour #E3DEDE */
+    --bazaar-colour: rgba(153, 133, 133, 1); /* Bazaar #998585 */
+    --masala-colour: rgba(67, 56, 56, 1); /* Masala #433838 */
     /* defining the 90% opacity colours to be used */
-    --red-90: rgba(208, 2, 27, 0.9); /* Lava #D0021B */
-    --blue-90: rgba(39, 111, 191, 0.9); /* Celtic Blue #276FBF */
-    --green-90: rgba(6, 167, 125, 0.9); /* Green Munsell #06A77D */
-    --white-90: rgba(250, 249, 249, 0.9); /* Cultured #FAF9F9 */
-    --black-90: rgba(11, 9, 9, 0.9); /* Rich Black Fogra #0B0909 */
-    --yellow-90: rgba(255, 191, 0, 0.9); /* Amber #FFBF00 */
-    --light-grey-90: rgba(227, 222, 222, 0.9); /* Light Grey #E3DEDE */
-    --mid-grey-90: rgba(153, 133, 133, 0.9); /* Mid Grey #998585 */
-    --dark-grey-90: rgba(67, 56, 56, 0.9); /* Dark Grey #433838 */
+    --monza-90: rgba(208, 2, 27, 0.9); /* Monza #D0021B */
+    --mariner-90: rgba(39, 111, 191, 0.9); /* Mariner #276FBF */
+    --niagara-90: rgba(6, 167, 125, 0.9); /* Niagara #06A77D */
+    --alabaster-90: rgba(250, 249, 249, 0.9); /* Alabaster #FAF9F9 */
+    --cod-gray-90: rgba(11, 9, 9, 0.9); /* Cod Gray #0B0909 */
+    --amber-90: rgba(255, 191, 0, 0.9); /* Amber #FFBF00 */
+    --bon-jour-90: rgba(227, 222, 222, 0.9); /* Bon Jour #E3DEDE */
+    --bazaar-90: rgba(153, 133, 133, 0.9); /* Bazaar #998585 */
+    --masala-90: rgba(67, 56, 56, 0.9); /* Masala #433838 */
 
     /* filters */
     --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.5));
@@ -60,40 +63,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h4 {
-    color: var(--red-colour);
+    color: var(--monza-colour);
 }
 
 h2, h5 {
-    color: var(--blue-colour);
+    color: var(--mariner-colour);
 }
 
 h3, h6 {
-    color: var(--green-colour);
+    color: var(--niagara-colour);
 }
 
 h1 {
-    font-size: var(--s5);
+    font-size: var(--s7);
     font-weight: 700;
 }
 
 h2 {
-    font-size: var(--s4);
+    font-size: var(--s6);
     font-weight: 700;
 }
 h3 {
-    font-size: var(--s3);
+    font-size: var(--s5);
     font-weight: 700;
 }
 h4 {
-    font-size: var(--s2);
+    font-size: var(--s4);
     font-weight: 700;
 }
 h5 {
-    font-size: var(--s1);
+    font-size: var(--s3);
     font-weight: 700;
 }
 h6 {
-    font-size: var(--s-1);
+    font-size: var(--s2);
     font-weight: 700;
 }
 
@@ -112,9 +115,9 @@ h6 {
 }
 
 header {
-    background-color: var(--red-colour);
+    background-color: var(--monza-colour);
     font-family: var(--monospace);
-    font-size: var(--white-colour);
+    font-size: var(--alabaster-colour);
 }
 
 header nav {
@@ -146,7 +149,7 @@ header li {
 }
 
 header a {
-    color: var(--white-colour);
+    color: var(--alabaster-colour);
 }
 
 #toggleMenu:checked ~ ul {
@@ -158,7 +161,7 @@ header a {
 /* main and content */
 
 main {
-    background-color: var(--white-colour);
+    background-color: var(--alabaster-colour);
 }
   
 article {
@@ -174,14 +177,14 @@ article > * {
 .page-header {
     padding: var(--s2) var(--s-6);
     line-height: 1.3;
-    background-color: var(--green-colour);
+    background-color: var(--niagara-colour);
 }  
 
 .headings {
     margin: 0 auto;
     max-width: 1280px;
     padding: var(--s2);
-    background-color: var(--white-90);
+    background-color: var(--alabaster-90);
     border-radius: 0 0 var(--s4) 0;
 }
 
@@ -189,8 +192,8 @@ article > * {
 /* footer */
  
 footer {
-    color: var(--white-colour);
-    background-color: var(--black-colour);
+    color: var(--alabaster-colour);
+    background-color: var(--cod-gray-colour);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,12 +206,12 @@ footer p {
 }  
 
 footer p a {
-    color: var(--yellow-colour);
+    color: var(--amber-colour);
 }
 
 footer p a:hover {
-    color: var(--black-colour);
-    background-color: var(--yellow-colour);
+    color: var(--cod-gray-colour);
+    background-color: var(--amber-colour);
 }
 
 .social-icons ul li {
@@ -217,10 +220,10 @@ footer p a:hover {
 }
   
 .social-icons a svg {
-    fill: var(--red-colour);
+    fill: var(--monza-colour);
     height: var(--s3);
 }
 
 .social-icons a:hover svg {
-    fill: var(--white-colour);
+    fill: var(--alabaster-colour);
 }
