@@ -58,44 +58,44 @@ html {
 
 /* headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
     font-family: var(--serif);
 }
 
-h1, h4 {
+h1, .one, h4, .four {
     color: var(--monza-colour);
 }
 
-h2, h5 {
+h2, .two, h5, .five {
     color: var(--mariner-colour);
 }
 
-h3, h6 {
+h3, .three, h6, .six {
     color: var(--niagara-colour);
 }
 
-h1 {
+h1, .one {
     font-size: var(--s7);
     font-weight: 700;
 }
 
-h2 {
+h2, .two {
     font-size: var(--s6);
     font-weight: 700;
 }
-h3 {
+h3, .three {
     font-size: var(--s5);
     font-weight: 700;
 }
-h4 {
+h4, .four {
     font-size: var(--s4);
     font-weight: 700;
 }
-h5 {
+h5, .five {
     font-size: var(--s3);
     font-weight: 700;
 }
-h6 {
+h6, .six {
     font-size: var(--s2);
     font-weight: 700;
 }
