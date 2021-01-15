@@ -10,6 +10,26 @@
     padding: var(--s0);
 }
 
+.measure-example {
+    background-color: var(--bon-jour-colour);
+    background-image: linear-gradient(to bottom,#D0021B,#D0021B);
+    background-position: center center;
+    background-size: 100% var(--s-4);
+    background-repeat: no-repeat;
+    height: var(--s0);
+    display: block;
+}
+dl {
+    display: grid;
+    grid-template-columns: 100%;
+    -moz-column-gap: var(--s0);
+    column-gap: var(--s0);
+    row-gap: var(--s1);
+    margin-top: 0;
+    overflow: hidden;
+    grid-template-columns: repeat(2,minmax(min-content,16.67%) 1fr);
+}
+
 @media (min-width: 600px) {
     .palette-list {
         display: grid;
