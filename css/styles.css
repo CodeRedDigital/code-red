@@ -27,7 +27,7 @@
     /* Colour names from https://chir.ag/projects/name-that-color */
     --monza-colour: rgba(208, 2, 27, 1); /* Monza #D0021B */
     --mariner-colour: rgba(39, 111, 191, 1); /* Mariner #276FBF */
-    --niagara-colour: rgba(6, 167, 125, 1); /* Niagara #06A77D */
+    --niagara-colour: rgba(4, 118, 88, 1); /* Niagara #047658 */
     --alabaster-colour: rgba(250, 249, 249, 1); /* Alabaster #FAF9F9 */
     --cod-gray-colour: rgba(11, 9, 9, 1); /* Cod Gray #0B0909 */
     --amber-colour: rgba(255, 191, 0, 1); /* Amber #FFBF00 */
@@ -37,7 +37,7 @@
     /* defining the 90% opacity colours to be used */
     --monza-90: rgba(208, 2, 27, 0.9); /* Monza #D0021B */
     --mariner-90: rgba(39, 111, 191, 0.9); /* Mariner #276FBF */
-    --niagara-90: rgba(6, 167, 125, 0.9); /* Niagara #06A77D */
+    --niagara-90: rgba(4, 118, 88, 0.9); /* Niagara #047658 */
     --alabaster-90: rgba(250, 249, 249, 0.9); /* Alabaster #FAF9F9 */
     --cod-gray-90: rgba(11, 9, 9, 0.9); /* Cod Gray #0B0909 */
     --amber-90: rgba(255, 191, 0, 0.9); /* Amber #FFBF00 */
@@ -73,7 +73,7 @@ html {
     font-weight: var(--normal);
 }
 
-a {
+main a {
    color: var(--mariner-colour);
    background-color: var(--alabaster-colour);
    text-decoration-color: var(--bazaar-90);
@@ -82,7 +82,7 @@ a {
    transition: all .2s ease;
 }
 
-a:hover, .hovered {
+main a:hover, .hovered {
     color: var(--alabaster-colour);
     background-color: var(--mariner-colour);
     text-decoration-color: var(--monza-colour);
@@ -94,7 +94,7 @@ strong, .bold {
     font-weight: var(--bold);
 }
 
-em
+em {}
 
 /* headings */
 
