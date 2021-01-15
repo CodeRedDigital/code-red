@@ -224,23 +224,3 @@ footer p a:hover {
 .social-icons a:hover svg {
     fill: var(--white-colour);
 }
-
-/* Style Guide */
-
-.palette-list * {
-    color:inherit;
-    font-family: monospace;
-    text-align: center;
-}
-
-.palette-list li {
-    padding: var(--s0);
-}
-
-@media (min-width: 600px) {
-    .palette-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1280px;
-    }
-}
