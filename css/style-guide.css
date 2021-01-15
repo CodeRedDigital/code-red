@@ -1,4 +1,5 @@
 /* Style Guide */
+/* colours */
 
 .palette-list * {
     color:inherit;
@@ -9,6 +10,7 @@
 .palette-list li {
     padding: var(--s0);
 }
+/* Sizes */
 
 .measure-example {
     background-color: var(--bon-jour-colour);
@@ -28,6 +30,16 @@ dl {
     margin-top: 0;
     overflow: hidden;
     grid-template-columns: repeat(2,minmax(min-content,16.67%) 1fr);
+}
+
+/* Fonts */
+
+.serif {
+    font-family: var(--serif);
+}
+
+.monospace {
+    font-family: var(--monospace);
 }
 
 @media (min-width: 600px) {
