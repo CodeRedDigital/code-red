@@ -247,18 +247,26 @@ footer p {
 
 footer p a {
     color: var(--amber-colour);
+    background-color: inherit;
+    text-decoration-color: var(--amber-colour);
 }
 
 footer p a:hover {
     color: var(--cod-gray-colour);
     background-color: var(--amber-colour);
+    text-decoration: none;
 }
 
 .social-icons ul li {
     display: inline;
     padding: var(--s-5);
 }
-  
+ 
+.social-icons a {
+    background-color: inherit;
+    text-decoration: none;
+}
+
 .social-icons a svg {
     fill: var(--monza-colour);
     height: var(--s3);
