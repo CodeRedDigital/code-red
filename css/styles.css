@@ -45,6 +45,11 @@
     --bazaar-90: rgba(153, 133, 133, 0.9); /* Bazaar #998585 */
     --masala-90: rgba(67, 56, 56, 0.9); /* Masala #433838 */
 
+    /* Font Weights */
+    --light: 200;
+    --normal: 400;
+    --bold: 600;
+
     /* filters */
     --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.5));
     --large-drop-shadow: drop-shadow(0px 10px 20px rgba(11, 9, 9, 0.5));
@@ -54,7 +59,42 @@
 
 html {
     font-family: var(--sans-serif);
+    font-size: var(--s1);
+    font-weight: var(--normal);
 }
+
+/* font-weight classes */
+
+.light {
+    font-weight: var(--light);
+}
+
+.normal {
+    font-weight: var(--normal);
+}
+
+a {
+   color: var(--mariner-colour);
+   background-color: var(--alabaster-colour);
+   text-decoration-color: var(--bazaar-90);
+   text-decoration-skip: auto;
+   text-decoration-thickness: 1px;
+   transition: all .2s ease;
+}
+
+a:hover, .hovered {
+    color: var(--alabaster-colour);
+    background-color: var(--mariner-colour);
+    text-decoration-color: var(--monza-colour);
+    text-decoration-thickness: 3px;
+    transition: all .2s ease;
+}
+
+strong, .bold {
+    font-weight: var(--bold);
+}
+
+em
 
 /* headings */
 
@@ -123,7 +163,7 @@ header {
 header nav {
     max-width: 1280px;
     margin: 0 auto;
-    padding: var(--s-6);
+    padding: var(--s-7);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,7 +206,7 @@ main {
   
 article {
     margin: auto;
-    padding: 0 var(--s-6);
+    padding: 0 var(--s-7);
     max-width: 1280px;
 }
 
@@ -175,7 +215,7 @@ article > * {
 }
   
 .page-header {
-    padding: var(--s2) var(--s-6);
+    padding: var(--s2) var(--s-7);
     line-height: 1.3;
     background-color: var(--niagara-colour);
 }  
@@ -201,7 +241,7 @@ footer {
 
 footer p {
     text-align: center;
-    padding: 0 var(--s-6);
+    padding: 0 var(--s-7);
     font-size: var(--s-1);
 }  
 
