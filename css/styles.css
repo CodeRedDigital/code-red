@@ -94,8 +94,6 @@ strong, .bold {
     font-weight: var(--bold);
 }
 
-em {}
-
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
