@@ -158,6 +158,28 @@ kbd {
     color: var(--alabaster-colour);
 }
 
+/* blockquote */
+
+blockquote {
+    background-color: var(--bon-jour-20);
+    margin: 0 var(--s7);
+    padding: var(--s2);
+    font-family: var(--serif);
+}
+
+blockquote::before {
+    content: "“";
+    color: var(--monza-colour);
+    font-size: var(--s7);
+    padding: 0;
+}
+
+blockquote > cite {
+    display: block;
+    text-align: right;
+    margin-top: var(--s2);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
