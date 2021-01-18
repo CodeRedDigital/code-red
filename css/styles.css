@@ -44,6 +44,16 @@
     --bon-jour-90: rgba(227, 222, 222, 0.9); /* Bon Jour #E3DEDE */
     --bazaar-90: rgba(153, 133, 133, 0.9); /* Bazaar #998585 */
     --masala-90: rgba(67, 56, 56, 0.9); /* Masala #433838 */
+    /* defining the 20% opacity colours to be used */
+    --monza-20: rgba(208, 2, 27, 0.2); /* Monza #D0021B */
+    --mariner-20: rgba(39, 111, 191, 0.2); /* Mariner #276FBF */
+    --niagara-20: rgba(4, 118, 88, 0.2); /* Niagara #047658 */
+    --alabaster-20: rgba(250, 249, 249, 0.2); /* Alabaster #FAF9F9 */
+    --cod-gray-20: rgba(11, 9, 9, 0.2); /* Cod Gray #0B0909 */
+    --amber-20: rgba(255, 191, 0, 0.2); /* Amber #FFBF00 */
+    --bon-jour-20: rgba(227, 222, 222, 0.2); /* Bon Jour #E3DEDE */
+    --bazaar-20: rgba(153, 133, 133, 0.2); /* Bazaar #998585 */
+    --masala-20: rgba(67, 56, 56, 0.2); /* Masala #433838 */
 
     /* Font Weights */
     --light: 200;
@@ -92,6 +102,30 @@ main a:hover, .hovered {
 
 strong, .bold {
     font-weight: var(--bold);
+}
+
+del {
+    color: var(--monza-90);
+}
+
+ins {
+    background-color: var(--niagara-20);
+    text-decoration: none;
+}
+
+sup, sub {
+    font-family: var(--serif);
+    font-size: 0.75em;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+abbr {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: var(--mariner-90);
 }
 
 /* headings */
