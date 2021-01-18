@@ -161,13 +161,18 @@ kbd {
 /* blockquote */
 
 blockquote {
-    background-color: var(--bon-jour-20);
+    background-color: var(--bon-jour-90);
     margin: 0 var(--s7);
     padding: var(--s2);
     font-family: var(--serif);
+    border-radius: 0 0 var(--s2) 0;
 }
 
-blockquote::before {
+blockquote > p {
+    line-height: 1.5rem;
+}
+
+blockquote > p:first-of-type::before {
     content: "“";
     color: var(--monza-colour);
     font-size: var(--s7);
@@ -178,6 +183,10 @@ blockquote > cite {
     display: block;
     text-align: right;
     margin-top: var(--s2);
+}
+
+blockquote > cite > a {
+    background-color: var(--bon-jour-90);
 }
 
 /* headings */
