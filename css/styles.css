@@ -122,10 +122,40 @@ small {
     font-size: 0.75em;
 }
 
-abbr {
+abbr[title], dfn[title] {
     text-decoration-style: dotted;
     text-decoration-line: underline;
     text-decoration-color: var(--mariner-90);
+    cursor: help;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+mark {
+    background-color: var(--amber-colour);
+}
+
+code, pre, samp, var, kbd {
+    font-family: var(--monospace);
+}
+
+code, samp, var {
+    background-color: var(--bon-jour-colour);
+}
+
+kbd {
+    text-transform: uppercase;
+    padding: 1px 2px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+::selection, .selected {
+    background-color: var(--monza-colour);
+    color: var(--alabaster-colour);
 }
 
 /* headings */
