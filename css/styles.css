@@ -1,6 +1,6 @@
 :root {
     /* defining scales for sizing elements */
-    font-size: 14px;
+    font-size: 0.875rem;
     --ratio: 1.2;
     --s-7: calc(var(--s-6) / var(--ratio));
     --s-6: calc(var(--s-5) / var(--ratio));
@@ -435,7 +435,7 @@ footer p a:hover {
 /* midi size */
 @media screen and (min-width: 501px) {
     :root {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -449,7 +449,7 @@ footer p a:hover {
 /* large size */
 @media screen and (min-width: 1001px) {
     :root {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
