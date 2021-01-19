@@ -91,7 +91,7 @@ main {
 }
   
 article {
-    margin: auto;
+    margin: 0 auto var(--s5) auto;
     padding: 0 var(--s-7);
     max-width: 1280px;
 }
