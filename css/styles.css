@@ -83,6 +83,36 @@ html {
     font-weight: var(--normal);
 }
 
+/* main and content */
+
+main {
+    background-color: var(--alabaster-colour);
+}
+  
+article {
+    margin: auto;
+    padding: 0 var(--s-7);
+    max-width: 1280px;
+}
+
+article > *:not(figure) {
+    max-width: 70ch
+}
+  
+.page-header {
+    padding: var(--s2) var(--s-7);
+    line-height: 1.3;
+    background-color: var(--niagara-colour);
+}  
+
+.headings {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: var(--s2);
+    background-color: var(--alabaster-90);
+    border-radius: 0 0 var(--s4) 0;
+}
+
 main a {
    color: var(--mariner-colour);
    background-color: var(--alabaster-colour);
@@ -225,14 +255,11 @@ dl {
 
 /* Tables */
 
-th {
+th:not(:empty) {
     background-color: var(--mariner-colour);
     color: var(--alabaster-colour);
     padding: 0 var(--s-7);
-}
-
-th:empty {
-    background-color: var(--alabaster-colour);
+    white-space: nowrap;
 }
 
 table.tiger tbody tr:nth-child(2n) td {
@@ -354,39 +381,7 @@ header a {
 #toggleMenu:checked ~ ul {
     max-height: 500px;
     transition: max-height 0.75s ease;
-  }
-
-  
-/* main and content */
-
-main {
-    background-color: var(--alabaster-colour);
 }
-  
-article {
-    margin: auto;
-    padding: 0 var(--s-7);
-    max-width: 1280px;
-}
-
-article > * {
-    max-width: 70ch
-}
-  
-.page-header {
-    padding: var(--s2) var(--s-7);
-    line-height: 1.3;
-    background-color: var(--niagara-colour);
-}  
-
-.headings {
-    margin: 0 auto;
-    max-width: 1280px;
-    padding: var(--s2);
-    background-color: var(--alabaster-90);
-    border-radius: 0 0 var(--s4) 0;
-}
-
 
 /* footer */
  
