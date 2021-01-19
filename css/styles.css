@@ -207,9 +207,20 @@ ol {
     list-style: inside lower-alpha;
 }
 
-li::marker {
+li::marker, dt {
     color: var(--monza-colour);
     font-weight: var(--heavy);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 100%;
+    -moz-column-gap: var(--s0);
+    column-gap: var(--s0);
+    row-gap: var(--s1);
+    margin-top: 0;
+    overflow: hidden;
+    grid-template-columns: repeat(2,minmax(min-content,16.67%) 1fr);
 }
 
 /* headings */
