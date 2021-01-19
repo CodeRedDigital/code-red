@@ -58,7 +58,7 @@
     /* Font Weights */
     --light: 200;
     --normal: 400;
-    --bold: 600;
+    --heavy: 600;
 
     /* filters */
     --normal-drop-shadow: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.5));
@@ -101,7 +101,7 @@ main a:hover, .hovered {
 }
 
 strong, .bold {
-    font-weight: var(--bold);
+    font-weight: var(--heavy);
 }
 
 del {
@@ -189,6 +189,8 @@ blockquote > cite > a {
     background-color: var(--bon-jour-90);
 }
 
+/* lists */
+
 ul {
     list-style: inside disc;
 }
@@ -207,6 +209,7 @@ ol {
 
 li::marker {
     color: var(--monza-colour);
+    font-weight: var(--heavy);
 }
 
 /* headings */
