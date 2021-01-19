@@ -283,6 +283,14 @@ figure {
     overflow-y: hidden;
 }
 
+figcaption {
+    background-color: var(--monza-colour);
+    max-width: 100%;
+    padding: var(--s-3);
+    color: var(--alabaster-colour);
+    border-radius: 0 0 var(--s2) 0;
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
