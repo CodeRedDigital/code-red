@@ -189,6 +189,26 @@ blockquote > cite > a {
     background-color: var(--bon-jour-90);
 }
 
+ul {
+    list-style: inside disc;
+}
+
+ul ul {
+    list-style: inside circle;
+}
+
+ol {
+    list-style: inside decimal-leading-zero;
+}
+
+    ol ol {
+    list-style: inside lower-alpha;
+}
+
+li::marker {
+    color: var(--monza-colour);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
