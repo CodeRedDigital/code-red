@@ -1,5 +1,6 @@
 :root {
     /* defining scales for sizing elements */
+    font-size: 14px;
     --ratio: 1.2;
     --s-7: calc(var(--s-6) / var(--ratio));
     --s-6: calc(var(--s-5) / var(--ratio));
@@ -428,4 +429,33 @@ footer p a:hover {
 
 .social-icons a:hover svg {
     fill: var(--alabaster-colour);
+}
+
+/* media queries */
+/* midi size */
+@media screen and (min-width: 501px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+/* normal size */
+@media screen and (min-width: 701px) {
+    :root {
+        --ratio:1.25
+    }
+}
+
+/* large size */
+@media screen and (min-width: 1001px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+/* massive size */
+@media screen and (min-width: 1201px) {
+    :root {
+        --ratio: 1.3;
+    }
 }
