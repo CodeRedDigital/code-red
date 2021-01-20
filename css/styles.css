@@ -96,7 +96,7 @@ article {
     max-width: 1280px;
 }
 
-article > *:not(figure) {
+article section > *:not(figure) {
     max-width: 70ch
 }
   
@@ -355,6 +355,7 @@ header {
     font-size: var(--alabaster-colour);
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 header nav {
@@ -397,6 +398,16 @@ header a:hover, header a:focus {
 #toggleMenu:checked ~ ul {
     max-height: 500px;
     transition: max-height 0.75s ease;
+}
+
+/* Sticky heading 2s */
+
+article section h2,
+aside section.toc {
+    top: 50px;
+    top: var(--s6);
+    position: sticky;
+    background-color: var(--alabaster-colour);
 }
 
 /* footer */
@@ -455,6 +466,10 @@ footer p a:hover {
     header nav ul {
         top: var(--s4);
     }
+    article section h2,
+    aside section.toc {
+        top: var(--s5);
+    }
 }
 
 /* normal size */
@@ -487,6 +502,10 @@ footer p a:hover {
 @media screen and (min-width: 1001px) {
     :root {
         font-size: 1.125rem;
+    }
+    article section h2,
+    aside section.toc {
+        top: var(--s4);
     }
 }
 
