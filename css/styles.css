@@ -387,6 +387,11 @@ header a {
     color: var(--alabaster-colour);
 }
 
+header a:hover {
+    color: var(--monza-colour);
+    background-color: var(--alabaster-colour);
+}
+
 #toggleMenu:checked ~ ul {
     max-height: 500px;
     transition: max-height 0.75s ease;
