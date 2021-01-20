@@ -353,6 +353,8 @@ header {
     background-color: var(--monza-colour);
     font-family: var(--monospace);
     font-size: var(--alabaster-colour);
+    position: sticky;
+    top: 0;
 }
 
 header nav {
