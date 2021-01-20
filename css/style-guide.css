@@ -27,22 +27,28 @@
 /* Fonts */
 
 .serif {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
 }
 
 .monospace {
     font-family: var(--monospace);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 501px) {
     .palette-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: var(--s-2);
         max-width: 1280px;
     }
 
     .palette-list li {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .palette-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

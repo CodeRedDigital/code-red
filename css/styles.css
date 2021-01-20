@@ -69,7 +69,7 @@
 /* HTML Element styles */
 
 html {
-    font-family: var(--sans-serif);
+    font-family: var(--serif);
     font-size: var(--s1);
     font-weight: var(--normal);
 }
@@ -145,7 +145,7 @@ ins {
 }
 
 sup, sub {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     font-size: 0.75em;
 }
 
@@ -195,7 +195,7 @@ blockquote {
     background-color: var(--bon-jour-90);
     margin: 0 var(--s7);
     padding: var(--s2);
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     border-radius: 0 0 var(--s2) 0;
 }
 
@@ -294,7 +294,7 @@ figcaption {
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
 }
 
 h1, .one, h4, .four {
@@ -452,6 +452,12 @@ footer p a:hover {
     :root {
         --ratio:1.25
     }
+    #hamburger {
+        display: none;
+    }
+    header nav ul {
+        display: contents;
+        }
 }
 
 /* large size */
