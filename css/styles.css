@@ -375,7 +375,7 @@ header nav ul {
     transition: max-height 0.75s ease;
     overflow: hidden;
     position: absolute;
-    top: var(--s4);
+    top: var(--s5);
     filter: var(--normal-drop-shadow);
 }
 
@@ -450,6 +450,9 @@ footer p a:hover {
     :root {
         font-size: 1rem;
     }
+    header nav ul {
+        top: var(--s4);
+    }
 }
 
 /* normal size */
@@ -457,12 +460,25 @@ footer p a:hover {
     :root {
         --ratio:1.25
     }
+    header nav ul {
+        top: var(--s2);
+    }
+}
+
+/* menu min size */
+
+@media screen and (min-width: 851px) {
     #hamburger {
         display: none;
     }
     header nav ul {
-        display: contents;
-        }
+        border-radius: 0;
+        max-height: 60px;
+        position: inherit;
+        display: inherit;
+        margin: 0;
+        filter: none;
+    }
 }
 
 /* large size */
