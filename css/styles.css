@@ -256,6 +256,10 @@ dl {
 
 /* Tables */
 
+table {
+    align-self: flex-start;
+}
+
 th:not(:empty) {
     background-color: var(--mariner-colour);
     color: var(--alabaster-colour);
