@@ -387,7 +387,7 @@ header a {
     color: var(--alabaster-colour);
 }
 
-header a:hover {
+header a:hover, header a:focus {
     color: var(--monza-colour);
     background-color: var(--alabaster-colour);
 }
