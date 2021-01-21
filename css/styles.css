@@ -322,6 +322,10 @@ label {
     color: var(--mariner-colour);
 }
 
+.required {
+    color: var(--monza-colour);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
