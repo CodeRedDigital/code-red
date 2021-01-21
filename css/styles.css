@@ -312,6 +312,16 @@ figure audio, figure canvas, figure embed, figure iframe, figure img, figure obj
     max-width: 100%;
 }
 
+/* Forms */
+
+label {
+    display: block;
+    font-family: var(--sans-serif);
+    font-weight: var(--heavy);
+    font-size: var(--s3);
+    color: var(--mariner-colour);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
