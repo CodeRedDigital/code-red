@@ -347,6 +347,23 @@ input:valid, #valid {
 input:invalid, #invalid {
     border-color: var(--monza-colour);
     background-color: var(--monza-20);
+    display: block;
+}
+
+select {
+    font-size: var(--s3);
+    font-family: var(--monospace);
+    padding: var(--s-1);
+    background-color: var(--alabaster-colour);
+    width: 100%;
+}
+
+*:disabled {
+    cursor: not-allowed;
+}
+
+input:disabled, input:disabled::placeholder {
+    border-color: var(--cod-gray-20);
 }
 
 /* Buttons */

@@ -439,8 +439,28 @@ p q r s t u v w x y z { | } ~</code></pre>
                     <input id="valid" type="text" placeholder="text field">
                     <label for="invalid">Text invalid</label>
                     <input id="invalid" type="text" placeholder="text field">
+                    <label for="disabled">Text invalid</label>
+                    <input id="disabled" disabled type="text" placeholder="disabled text field">
                     <label for="textarea">Textarea</label>
                     <textarea id="textarea" placeholder="Please tell me about what you're looking to work on. Mentioning things like budget, timeframe, deadlines and what you're looking to achieve would be very helpful." rows="5"></textarea>
+                    <label for="services">Select</label>
+                    <select name="services" id="services">
+                        <option value=""> -Please choose an option- </option>
+                        <option value="dev">Web Development</option>
+                        <option value="consult">Consultancy</option>
+                        <option value="cms">Content Management Systems</option>
+                        <option value="training">Training</option>
+                        <option value="design">Design</option>
+                    </select>
+                    <label for="services">Select disbaled</label>
+                    <select disabled name="services" id="services">
+                        <option value=""> -Please choose an option- </option>
+                        <option value="dev">Web Development</option>
+                        <option value="consult">Consultancy</option>
+                        <option value="cms">Content Management Systems</option>
+                        <option value="training">Training</option>
+                        <option value="design">Design</option>
+                    </select>
                 </section>
                 <section>
                     <h2>Buttons</h2>
