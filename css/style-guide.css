@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 501px) {
-    .palette-list {
+    .palette-list, .buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: var(--s-2);
