@@ -326,7 +326,7 @@ label {
     color: var(--monza-colour);
 }
 
-input {
+input, textarea {
     width: 100%;
     font-size: var(--s3);
     font-family: var(--monospace);
