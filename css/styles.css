@@ -326,6 +326,15 @@ label {
     color: var(--monza-colour);
 }
 
+input {
+    width: 100%;
+    font-size: var(--s3);
+    font-family: var(--monospace);
+    border-color: var(--cod-gray-colour);
+    border-radius: 0 0 var(--s3) 0;
+    background-color: var(--alabaster-colour);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
