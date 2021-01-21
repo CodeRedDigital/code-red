@@ -12,6 +12,11 @@
     border-radius: 0 0 var(--s2) 0;
     margin-top: var(--s-2);
 }
+
+.palette-list li h3 {
+    font-size: var(--s3);
+}
+
 /* Sizes */
 
 .measure-example {
