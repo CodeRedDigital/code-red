@@ -91,13 +91,14 @@ main {
 }
   
 article {
-    margin: 0 auto var(--s5) auto;
-    padding: 0 var(--s-7);
+    margin: 0 auto 0 auto;
+    padding: 0 var(--s-7) var(--s5) var(--s-7);
     max-width: 1280px;
 }
 
-article section > *:not(figure) {
-    max-width: 70ch
+article section {
+    max-width: 70ch;
+    margin: auto;
 }
   
 .page-header {
@@ -256,11 +257,12 @@ dl {
 
 /* Tables */
 
-table {
+table, iframe {
     align-self: flex-start;
 }
 
 th:not(:empty) {
+    font-family: var(--sans-serif);
     background-color: var(--mariner-colour);
     color: var(--alabaster-colour);
     padding: 0 var(--s-7);
@@ -288,11 +290,26 @@ figure {
 }
 
 figcaption {
+    font-family: var(--sans-serif);
     background-color: var(--monza-colour);
     max-width: 100%;
     padding: var(--s-3);
     color: var(--alabaster-colour);
     border-radius: 0 0 var(--s2) 0;
+    width:100%;
+}
+
+figcaption a {
+    background-color: var(--monza-colour);
+    color: var(--alabaster-colour);
+    text-decoration: underline;
+    text-decoration-color: var(--mariner-colour);
+    text-decoration-thickness: var(--s-7);
+}
+
+figure audio, figure canvas, figure embed, figure iframe, figure img, figure object, figure picture, figure svg, figure video {
+    max-height: 75vh;
+    max-width: 100%;
 }
 
 /* headings */
