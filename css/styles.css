@@ -348,6 +348,61 @@ input:invalid, #invalid {
     border-color: var(--monza-colour);
     background-color: var(--monza-20);
 }
+
+/* Buttons */
+
+button {
+    font-size: var(--s2);
+    font-family: var(--monospace);
+    padding: var(--s0);
+    margin: var(--s-1);
+    border-radius: var(--s-3) var(--s-3) var(--s2) var(--s-3);
+    color: var(--alabaster-colour);
+    background-color: var(--monza-colour);
+    filter: var(--normal-drop-shadow);
+}
+
+button:disabled {
+    background-color: var(--monza-20);
+    color: var(--cod-gray-90);
+    filter: none;
+}
+
+button:hover:not(:disabled), button:focus:not(:disabled) {
+    filter: var(--large-drop-shadow);
+}
+
+button:active:not(:disabled) {
+    position: relative;
+    top: 1px;
+    transform: scale(0.98);
+}
+
+button.niagara {
+    background-color: var(--niagara-colour);
+}
+
+button.niagara:disabled {
+    background-color: var(--niagara-20);
+}
+
+button.mariner {
+    background-color: var(--mariner-colour);
+}
+
+button.mariner:disabled {
+    background-color: var(--mariner-20);
+}
+
+button.amber {
+    background-color: var(--amber-colour);
+    color: var(--cod-gray-colour);
+}
+
+button.amber:disabled {
+    background-color: var(--amber-20);
+}
+
 /* headings */
 
 h1, h2, h3, h4, h5, h6, .one, .two, .three, .four, .five, .six {
@@ -465,6 +520,7 @@ aside section.toc {
     top: var(--s6);
     position: sticky;
     background-color: var(--alabaster-colour);
+    z-index: 50;
 }
 
 /* footer */
