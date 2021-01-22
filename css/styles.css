@@ -96,7 +96,7 @@ article {
     max-width: 1280px;
 }
 
-article section {
+article section:not(.cards) {
     max-width: 70ch;
     margin: auto;
 }
@@ -478,7 +478,7 @@ h6, .six {
     clip-path: inset(100%) !important;
 }
 
-header {
+.header {
     background-color: var(--monza-colour);
     font-family: var(--monospace);
     font-size: var(--alabaster-colour);
@@ -487,7 +487,7 @@ header {
     z-index: 100;
 }
 
-header nav {
+.header nav {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--s-7);
@@ -496,7 +496,7 @@ header nav {
     justify-content: space-between;
 }
 
-header nav ul {
+.header nav ul {
     background-color: #D0021B;
     color: #FAF9F9;
     font-family: 'Courier New';
@@ -511,15 +511,15 @@ header nav ul {
     filter: var(--normal-drop-shadow);
 }
 
-header li {
+.header li {
     margin: 0 var(--s-1);
 }
 
-header a {
+.header a {
     color: var(--alabaster-colour);
 }
 
-header a:hover, header a:focus {
+.header a:hover, .header a:focus {
     color: var(--monza-colour);
     background-color: var(--alabaster-colour);
 }
@@ -539,6 +539,105 @@ aside section.toc {
     background-color: var(--alabaster-colour);
     z-index: 50;
 }
+
+/* cards */
+.cards {
+    width: 1280px;
+}
+
+.cards-page {
+    background-color: #faf9f9;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+ }
+ a.card {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0 0 2rem 0;
+    filter: drop-shadow(0px 5px 10px rgba(11, 9, 9, 0.5));
+ }
+ 
+ a.card:hover {
+    filter: drop-shadow(0px 10px 20px rgba(11, 9, 9, 0.7));
+ }
+ .cards-page-one a.card:first-of-type {
+    grid-column: 1 / 3;
+ }
+ .card header {
+    width: 100%;
+    height: 40%;
+    background: #e3dede;
+ }
+ header img {
+    max-width: 100%;
+ }
+ .card-body {
+    width: 100%;
+    height: 50%;
+    background: #d0021b;
+    color: #faf9f9;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem
+ }
+
+ .card h2 {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+ }
+ .card-content p {
+    font-size: 1rem;
+    font-weight: normal;
+ }
+ .card footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    border-top: 1px solid #faf9f9;
+ }
+ 
+ .card footer h3 {
+    font-size: 1.5rem;
+    font-family: monospace;
+ }
+ .card footer .cardedBy {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 12px;
+ }
+ .card footer .cardedBy span {
+    font-size: 12px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-weight: bold;
+ }
+ .card footer .card-tags {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .card footer .card-tags ul.tags {
+    display: flex;
+ }
+ .card footer .card-tags  ul.tags li {
+    font-size: 12px;
+    letter-spacing: 2px;
+    list-style: none;
+    margin-left: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+ }
 
 /* footer */
  
