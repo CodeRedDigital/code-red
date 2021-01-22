@@ -585,6 +585,11 @@ aside section.toc {
     padding: 1rem
  }
 
+ .card h2, .card h3 {
+    background-color: inherit;
+    color: inherit;
+}
+
  .card h2 {
     font-family: monospace;
     font-size: 2rem;
@@ -641,7 +646,7 @@ aside section.toc {
 
 /* footer */
  
-footer {
+.footer {
     color: var(--alabaster-colour);
     background-color: var(--cod-gray-colour);
     display: flex;
@@ -649,19 +654,19 @@ footer {
     align-items: center;
 }
 
-footer p {
+.footer p {
     text-align: center;
     padding: 0 var(--s-7);
     font-size: var(--s-1);
 }  
 
-footer p a {
+.footer p a {
     color: var(--amber-colour);
     background-color: inherit;
     text-decoration-color: var(--amber-colour);
 }
 
-footer p a:hover {
+.footer p a:hover {
     color: var(--cod-gray-colour);
     background-color: var(--amber-colour);
     text-decoration: none;
