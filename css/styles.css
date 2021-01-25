@@ -531,7 +531,7 @@ h6, .six {
 
 /* Sticky heading 2s */
 
-article section h2,
+article section > h2,
 aside section.toc {
     top: 50px;
     top: var(--s6);
