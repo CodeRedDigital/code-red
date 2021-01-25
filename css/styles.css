@@ -543,14 +543,15 @@ aside section.toc {
 /* cards */
 .cards > ul {
     list-style: none;
+    padding: 0;
  }
  
  .card + .card {
     margin-top: 0;
  }
- @supports not (display: grid) {
+ @supports not (display: grid)  {
     .card {
-       margin-bottom: var(--s3);
+       margin-bottom: var(--s2);
     }
  }
  
@@ -558,8 +559,8 @@ aside section.toc {
     .cards > ul {
        display: grid;
        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-       grid-column-gap: var(--s3);
-       grid-row-gap: var(--s3);
+       grid-column-gap: var(--s2);
+       grid-row-gap: var(--s2);
     }
     @media (min-width:601px) {
        .first-page .card:first-of-type {
