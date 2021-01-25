@@ -647,9 +647,6 @@ aside section.toc {
  }
  
  .card footer {
-     display: flex;
-     justify-content: space-between;
-     margin-top: var(--s1);
      border-top: 1px solid #faf9f9;
  }
  
