@@ -707,18 +707,6 @@ aside section.toc {
     text-align: center;
     padding: 0 var(--s-7);
     font-size: var(--s-1);
-}  
-
-.footer p a {
-    color: var(--amber-colour);
-    background-color: inherit;
-    text-decoration-color: var(--amber-colour);
-}
-
-.footer p a:hover {
-    color: var(--cod-gray-colour);
-    background-color: var(--amber-colour);
-    text-decoration: none;
 }
 
 .social-icons ul li {
@@ -738,6 +726,26 @@ aside section.toc {
 
 .social-icons a:hover svg {
     fill: var(--alabaster-colour);
+}
+
+.secondary-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.secondary-nav li {
+    padding: 0 var(--s-1);
+}
+
+.secondary-nav a {
+    color: var(--amber-colour);
+}
+
+.secondary-nav a:hover, .secondary-nav a:focus {
+    color: var(--cod-gray-colour);
+    background-color: var(--amber-colour);
+    text-decoration: none;
 }
 
 /* media queries */
