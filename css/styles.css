@@ -624,6 +624,35 @@ aside section.toc {
      text-decoration: underline;
  }
  
+ /* cards pagination */
+
+.pagination {
+    display: flex;
+    width: ;
+    min-width: 300px;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: var(--s3);
+    font-family: var(--monospace);
+}
+
+.pagination a {
+    color: var(--monza-colour);
+    text-decoration-color: var(--monza-colour);
+}
+
+.pagination a:hover, .pagination a:focus {
+    color: var(--alabaster-colour);
+    background-color: var(--monza-colour);
+    text-decoration: none;
+}
+
+.pagination > span {
+    color: var(--monza-20);
+    cursor: not-allowed;
+}
+
  /* make the whole card clickable */
  .card a::after {
      content: '';
