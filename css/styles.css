@@ -499,7 +499,7 @@ h6, .six {
 .header nav ul {
     background-color: #D0021B;
     color: #FAF9F9;
-    font-family: 'Courier New';
+    font-family: var(--monospace);
     font-weight: 700;
     font-size: var(--s2);
     border-radius: 0 0 var(--s1) 0;
@@ -589,7 +589,7 @@ aside section.toc {
  .card h2, .card h3 {
      color: inherit;
      background-color: inherit;
-     font-family: monospace;
+     font-family: var(--monospace);
  }
  
 .card h2 {
