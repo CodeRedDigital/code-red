@@ -628,7 +628,6 @@ aside section.toc {
 
 .pagination {
     display: flex;
-    width: ;
     min-width: 300px;
     justify-content: space-between;
     max-width: 600px;
