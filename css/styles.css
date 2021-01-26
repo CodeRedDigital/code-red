@@ -473,6 +473,10 @@ h6, .six {
     padding: var(--s7);
 }
 
+.page-header p {
+    font-size: var(--s3);
+}
+
 .centered {
     display: flex;
     justify-content: center;
