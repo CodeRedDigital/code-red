@@ -339,12 +339,12 @@ input, textarea {
     color: var(--cod-gray-colour);
 }
 
-input:valid, #valid {
+input:valid:required, #valid {
     border-color: var(--niagara-colour);
     background-color: var(--niagara-20);
 }
 
-input:invalid, #invalid {
+input:invalid:required, #invalid {
     border-color: var(--monza-colour);
     background-color: var(--monza-20);
     display: block;
