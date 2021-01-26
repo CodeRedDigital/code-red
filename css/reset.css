@@ -87,3 +87,9 @@ select {
   -webkit-clip-path: inset(100%) !important;
   clip-path: inset(100%) !important;
 }
+
+/* make all anchor links clear the top*/
+
+[id] {
+  scroll-margin-top: 2ex;
+}
