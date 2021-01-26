@@ -464,6 +464,11 @@ h6, .six {
     font-weight: 700;
 }
 
+.callout {
+    font-size: var(--s3);
+    padding: var(--s7);
+}
+
 .hidden {
     width: 1px !important;
     height: 1px !important;
