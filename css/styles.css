@@ -124,7 +124,7 @@ main a {
    transition: all .2s ease;
 }
 
-main a:hover, .hovered {
+main a:hover:not(.button), .hovered {
     color: var(--alabaster-colour);
     background-color: var(--mariner-colour);
     text-decoration-color: var(--monza-colour);
@@ -368,7 +368,7 @@ input:disabled, input:disabled::placeholder {
 
 /* Buttons */
 
-button {
+button, .button {
     font-size: var(--s2);
     font-family: var(--monospace);
     padding: var(--s0);
@@ -376,7 +376,7 @@ button {
     border-radius: var(--s-3) var(--s-3) var(--s2) var(--s-3);
     color: var(--alabaster-colour);
     background-color: var(--monza-colour);
-    filter: var(--normal-drop-shadow);
+    filter: var(--large-drop-shadow);
 }
 
 button:disabled {
@@ -385,17 +385,21 @@ button:disabled {
     filter: none;
 }
 
-button:hover:not(:disabled), button:focus:not(:disabled) {
-    filter: var(--large-drop-shadow);
+button:hover:not(:disabled), button:focus:not(:disabled), a.button:hover, a.button:focus {
+    filter: var(--normal-drop-shadow);
 }
 
-button:active:not(:disabled) {
+a.button, a.button:hover, a.button:focus {
+    text-decoration: none;
+}
+
+button:active:not(:disabled), a.button:active {
     position: relative;
     top: 1px;
     transform: scale(0.98);
 }
 
-button.niagara {
+button.niagara, .button.niagara {
     background-color: var(--niagara-colour);
 }
 
@@ -403,7 +407,7 @@ button.niagara:disabled {
     background-color: var(--niagara-20);
 }
 
-button.mariner {
+button.mariner, .button.mariner {
     background-color: var(--mariner-colour);
 }
 
@@ -411,7 +415,7 @@ button.mariner:disabled {
     background-color: var(--mariner-20);
 }
 
-button.amber {
+button.amber, .button.amber {
     background-color: var(--amber-colour);
     color: var(--cod-gray-colour);
 }
@@ -467,6 +471,11 @@ h6, .six {
 .callout {
     font-size: var(--s3);
     padding: var(--s7);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
 }
 
 .hidden {
