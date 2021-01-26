@@ -621,6 +621,7 @@ aside section.toc {
 
  .card a:hover {
      background-color: inherit;
+     text-decoration: underline;
  }
  
  /* make the whole card clickable */
@@ -632,7 +633,7 @@ aside section.toc {
      right: 0;
      bottom: 0;
  }
- 
+
  .card a:focus  {
      outline: none;
      background-color: inherit;
