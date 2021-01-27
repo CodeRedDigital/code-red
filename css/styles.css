@@ -195,7 +195,7 @@ kbd {
 
 blockquote {
     background-color: var(--bon-jour-90);
-    margin: 0 var(--s7);
+    margin: var(--s0) var(--s7);
     padding: var(--s2);
     font-family: var(--sans-serif);
     border-radius: 0 0 var(--s2) 0;
