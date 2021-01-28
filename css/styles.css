@@ -125,7 +125,7 @@ main a {
    transition: all .2s ease;
 }
 
-main a:hover:not(.button), .hovered {
+main a:hover, .hovered {
     color: var(--alabaster-colour);
     background-color: var(--mariner-colour);
     text-decoration-color: var(--monza-colour);
