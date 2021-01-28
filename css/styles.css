@@ -368,6 +368,10 @@ input:disabled, input:disabled::placeholder {
     border-color: var(--cod-gray-20);
 }
 
+input[type="submit"] {
+    width: auto;
+}
+
 /* Buttons */
 
 button, .button {
@@ -381,21 +385,21 @@ button, .button {
     filter: var(--large-drop-shadow);
 }
 
-button:disabled {
+button:disabled, input[type="submit"]:disabled {
     background-color: var(--monza-20);
     color: var(--cod-gray-90);
     filter: none;
 }
 
-button:hover:not(:disabled), button:focus:not(:disabled), a.button:hover, a.button:focus {
+button:hover:not(:disabled), button:focus:not(:disabled), .button:hover, .button:focus {
     filter: var(--normal-drop-shadow);
 }
 
-a.button, a.button:hover, a.button:focus {
+.button, .button:hover, .button:focus {
     text-decoration: none;
 }
 
-button:active:not(:disabled), a.button:active {
+button:active:not(:disabled), .button:active {
     position: relative;
     top: 1px;
     transform: scale(0.98);
