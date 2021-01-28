@@ -109,6 +109,14 @@ article section p {
     margin-bottom: var(--s2);
 }  
 
+.page-header.amber {
+    background-color: var(--amber-colour);
+}
+
+.page-header.mariner {
+    background-color: var(--mariner-colour);
+}
+
 .headings {
     margin: 0 auto;
     max-width: 1280px;
