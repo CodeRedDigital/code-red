@@ -96,9 +96,10 @@ article {
     max-width: 1280px;
 }
 
-article section:not(.cards) {
+article section p {
     max-width: 70ch;
     margin: auto;
+    margin-left: var(--s3);
 }
   
 .page-header {
