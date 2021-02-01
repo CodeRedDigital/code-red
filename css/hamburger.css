@@ -9,8 +9,10 @@
   
   #hamburger div {
     position: absolute;
+    height: 0.4rem;
     height: var(--s-5);
     width: 100%;
+    background: rgba(250, 249, 249, 1);
     background: var(--alabaster-colour);
     border-radius: 9px;
     opacity: 1;
