@@ -8,23 +8,31 @@
 }
 
 .palette-list li {
+    padding: 1rem;
     padding: var(--s0);
+    border-radius: 0 0 1.44rem 0;
     border-radius: 0 0 var(--s2) 0;
+    margin-top: 1.44rem;
     margin-top: var(--s-2);
 }
 
 .palette-list li h3 {
+    font-size: 1.73rem;
     font-size: var(--s3);
 }
 
 /* Sizes */
 
 .measure-example {
+    background-color: rgba(227, 222, 222, 1);
     background-color: var(--bon-jour-colour);
-    background-image: linear-gradient(to bottom,#D0021B,#D0021B);
+    background-image: linear-gradient(to bottom,rgba(208, 2, 27, 1),rgba(208, 2, 27, 1));
+    background-image: linear-gradient(to bottom,var(--monza-colour),var(--monza-colour));
     background-position: center center;
+    background-size: 100% 0.48rem;
     background-size: 100% var(--s-4);
     background-repeat: no-repeat;
+    height: 1rem;
     height: var(--s0);
     display: block;
 }
@@ -32,10 +40,12 @@
 /* Fonts */
 
 .serif {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-family: var(--sans-serif);
 }
 
 .monospace {
+    font-family: "Lucida Console", Monaco, monospace;
     font-family: var(--monospace);
 }
 
@@ -43,6 +53,7 @@
     .palette-list, .buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 0.69rem;
         grid-gap: var(--s-2);
         max-width: 1280px;
     }
