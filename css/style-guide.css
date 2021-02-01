@@ -37,6 +37,69 @@
     display: block;
 }
 
+/* measures */
+
+.s-7 {
+    width: 0.28rem;
+    width: var(--s-7);
+}
+.s-6 {
+    width: 0.33rem;
+    width: var(--s-6);
+}
+.s-5 {
+    width: 0.4rem;
+    width: var(--s-5);
+}
+.s-4 {
+    width: 0.48rem;
+    width: var(--s-4);
+}
+.s-3 {
+    width: 0.58rem;
+    width: var(--s-3);
+}
+.s-2 {
+    width: 0.69rem;
+    width: var(--s-2);
+}
+.s-1 {
+    width: 0.83rem;
+    width: var(--s-1);
+}
+.s0 {
+    width: 1rem;
+    width: var(--s0);
+}
+.s1 {
+    width: 1.2rem;
+    width: var(--s1);
+}
+.s2 {
+    width: 1.44rem;
+    width: var(--s2);
+}
+.s3 {
+    width: 1.73rem;
+    width: var(--s3);
+}
+.s4 {
+    width: 2.07rem;
+    width: var(--s4);
+}
+.s5 {
+    width: 2.49rem;
+    width: var(--s5);
+}
+.s6 {
+    width: 2.99rem;
+    width: var(--s6);
+}
+.s7 {
+    width: 3.58rem;
+    width: var(--s7);
+}
+
 /* Fonts */
 
 .serif {
