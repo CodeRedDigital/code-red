@@ -2,22 +2,22 @@
     /* defining scales for sizing elements */
     font-size: 0.875rem;
     --ratio: 1.2;
-    --s-7: calc(var(--s-6) / var(--ratio));
-    --s-6: calc(var(--s-5) / var(--ratio));
-    --s-5: calc(var(--s-4) / var(--ratio));
-    --s-4: calc(var(--s-3) / var(--ratio));
-    --s-3: calc(var(--s-2) / var(--ratio));
-    --s-2: calc(var(--s-1) / var(--ratio));
-    --s-1: calc(var(--s0) / var(--ratio));
-    --s0: 1rem;
-    --s1: calc(var(--s0) * var(--ratio));
-    --s2: calc(var(--s1) * var(--ratio));
-    --s3: calc(var(--s2) * var(--ratio));
-    --s4: calc(var(--s3) * var(--ratio));
-    --s5: calc(var(--s4) * var(--ratio));
-    --s6: calc(var(--s5) * var(--ratio));
-    --s7: calc(var(--s6) * var(--ratio));
-    --clear-header: calc(var(--s3) + 1.5rem + 1rem);
+    --s-7: calc(var(--s-6) / var(--ratio)); /* 4.5px 0.28rem */
+    --s-6: calc(var(--s-5) / var(--ratio)); /* 5.4px 0.33rem */
+    --s-5: calc(var(--s-4) / var(--ratio)); /* 6.4px 0.4rem */
+    --s-4: calc(var(--s-3) / var(--ratio)); /* 7.7px 0.48rem */
+    --s-3: calc(var(--s-2) / var(--ratio)); /* 9.3px 0.58rem */
+    --s-2: calc(var(--s-1) / var(--ratio)); /* 11.1px 0.69rem */
+    --s-1: calc(var(--s0) / var(--ratio)); /* 13.3px 0.83rem */
+    --s0: 1rem; /* 16px 1rem */
+    --s1: calc(var(--s0) * var(--ratio)); /* 19.2px 1.2rem */
+    --s2: calc(var(--s1) * var(--ratio)); /* 23px 1.44rem */
+    --s3: calc(var(--s2) * var(--ratio)); /* 27.6px 1.73rem */
+    --s4: calc(var(--s3) * var(--ratio)); /* 33.2px 2.07rem */
+    --s5: calc(var(--s4) * var(--ratio)); /* 39.8px 2.49rem */
+    --s6: calc(var(--s5) * var(--ratio)); /* 47.8px 2.99rem */
+    --s7: calc(var(--s6) * var(--ratio)); /* 57.3px 3.58rem */
+    --clear-header: calc(var(--s3) + 1.5rem + 1rem); /* 52.6px 4.57rem */
 
     /* defining fonts to be used */
     --serif: Georgia, serif;
@@ -69,6 +69,7 @@
 /* HTML Element styles */
 
 html {
+    font-family: Georgia, serif;
     font-family: var(--serif);
     font-size: var(--s1);
     font-weight: var(--normal);
