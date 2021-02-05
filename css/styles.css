@@ -683,7 +683,7 @@ h6, .six {
     color: var(--alabaster-colour);
 }
 
-.header a:hover, .header a:focus, .header a.active {
+.header a:hover, .header a:focus, .header a.active, .header a[data-state="active"] {
     color: rgba(208, 2, 27, 1);
     color: var(--monza-colour);
     background-color: rgba(250, 249, 249, 1);
