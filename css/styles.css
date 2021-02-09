@@ -707,6 +707,24 @@ aside section.toc {
     z-index: 50;
 }
 
+aside section {
+    margin-bottom: 1.44rem;
+    margin-bottom: var(--s1);
+}
+
+summary {
+    font-size: 1.44rem;
+    font-size: var(--s1);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-family: var(--monospace);
+    background-color: rgba(208, 2, 27, 1);
+    background-color: var(--monza-colour);
+    color: rgba(250, 249, 249, 1);
+    color: var(--alabaster-colour);
+    border-radius: 0 0 1.44rem 0;
+    border-radius: 0 0 var(--s1) 0;
+}
+
 /* cards */
 .cards > ul {
     list-style: none;
@@ -964,6 +982,12 @@ aside section.toc {
     aside section.toc {
         top: 2.49rem;
         top: var(--s5);
+    }
+    article.post {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 1.44rem;
+        grid-column-gap: var(--s1);
     }
 }
 

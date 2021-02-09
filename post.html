@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
-        <title>Code Red | Home</title>
+        <title>Code Red | Blog Post</title>
         <meta name="msapplication-TileColor" content="#D0021B"/>
         <meta name="msapplication-config" content="./browserconfig.xml"/><!-- TODO -->
         <meta name="theme-color" content="#D0021B"/>
@@ -41,63 +41,110 @@
         <main id="content">
             <section class="page-header">
                 <div class="headings">
-                    <h1>Hand Crafted Websites</h1>
-                    <h2>Made by Dave</h2>
+                    <h1>=, == or ===</h1>
+                    <p>What are the differences between single, double and triple equals in JavaScript</p>
                 </div>
             </section>
-            <article>
-                <p class="callout">Craftsmanship is important in all industries, not just those that fashion or create physical objects, but also those that create digital products.</p>
-            <section class="cards">
-                <h2>Recent Featured Posts</h2>
-                <ul>
-                 <li class="card">
-                    <div class="image">
-                       <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                    </div>
-                    <div class="card-body">
-                       <h2><a href="#card-link">Hitchhiker's Guide to the Galaxy is 42 years old!</a></h2>
-                       <p>My thoughts on Hitchhikers Guide to the Galaxy becoming 42 years old.</p>
-                       <footer>
-                          <h3>Date</h3>
-                          <time date="2020-03-10">10 March 2020</time>
-                       </footer>
-                    </div>
-                 </li>
-                 <li class="card">
-                    <div class="image">
-                       <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                    </div>
-                    <div class="card-body">
-                       <h2><a href="#card-link">Reading Time</a></h2>
-                       <p>Code of how long the average reader would take to read a blog post, using JavaScript or Matrix Keywords.</p>
-                       <footer>
-                          <h3>Date</h3>
-                          <time date="2020-03-10">10 March 2020</time>
-                       </footer>
-                    </div>
-                 </li>
-                 <li class="card">
-                    <div class="image">
-                       <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-                    </div>
-                    <div class="card-body">
-                       <h2><a href="#card-link">Etch-A-Sketch</a></h2>
-                       <p>So I wrote some JavaScript that creates an Etch-A-Sketch app. This is part of the learning process of me learning JavaScript.</p>
-                       <footer>
-                          <h3>Date</h3>
-                          <time date="2020-03-10">10 March 2020</time>
-                       </footer>
-                    </div>
-                 </li>
-                </ul>
-                <section class="centered">
-                    <a href="/blog/" class="mariner button">See more posts</a>
+            <article class="post">
+            <aside>
+                <section class="toc">
+                    <details>
+                        <summary>Table of Contents</summary>
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ul>Something small enough to escape casual notice.
+                    </details>  
                 </section>
-            </section>
-            <hr>
-            <section class="centered">
-                <a href="#" class="niagara button">Get in Touch</a>
-            </section>
+                <section>
+                    <details>
+                        <summary>Tags</summary>
+                        <ul>
+                            <li>Quotes</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </details>
+                </section>
+            </aside>
+            <div class="post-content">
+                <section>
+                    <p>So in JavaScript there a 3 types of equals <code>=</code> , <code>==</code> and <code>===</code> . So why so many and what are they for?</p>
+                    </section>
+                    <section>
+                    <h2><code>=</code> single equals</h2>
+                    <p>This 1 is easy to understand, it's used to set a variable. For example <code> var age = 50; </code> .</p>
+                    <p>As we know there are 3 ways to declare a variable:</p>
+                    <ul>
+                        <li><code>var</code></li>
+                        <li><code>let</code></li>
+                        <li><code>const</code></li>
+                    </ul>
+                    <p>The first 2, <code>var</code> &amp; <code>let</code> , can be reassigned (changed), where as <code>const</code> can not and if you try to you'll get an error:</p>
+                    <pre>Uncaught TypeError: Assignment to constant variable.
+                    </pre>
+                    <p><code>var</code> is the old way of declaring variables, before the advent of <a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015" title="ECMAScript 6">ES6</a>. Since then we have had 2 ways to declare variables <code>let</code> for variables that can change and <code>const</code> for variable that don't.</p>
+                    </section>
+                    <section>
+                    <h2><code>==</code> double equals &amp; <code>===</code> triple equals</h2>
+                    <p>Both of these are for checking if a value is equal to something. For example is age equal to 50:</p>
+                    <ul>
+                        <li><code> age == 50; </code></li>
+                        <li><code> age === 50; </code></li>
+                    </ul>
+                    <p>So why the need for both?</p>
+                    <p>While it would appear that these two versions are the same they technically are not <code>===</code> triple equals is much stricter, so I'll start with that.</p>
+                    <h3><code>===</code> triple equals</h3>
+                    <p>As this is the stricter of the two types of equals, it checks not only the value but also the type of variable:</p>
+                    <h4>Variable as a number</h4>
+                    <pre>&gt; let age = 50;
+                    &gt; age === 50;
+                    &lt; true
+                    &gt; typeof age;
+                    &lt; "number"&nbsp;</pre>
+                    <h4>Variable as a string</h4>
+                    <pre>&gt; let age = '50';
+                    &gt; age === 50;
+                    &lt; false
+                    &gt; typeof age;
+                    &lt; "string"&nbsp;</pre>
+                    <h4>with <code>==</code> double equals</h4>
+                    <pre>&gt; let age = '50';
+                    &gt; age == 50;
+                    &lt; true
+                    &gt; typeof age;
+                    &lt; "string"&nbsp;</pre>
+                    <p>It is recommended that <code>===</code> triple equals is used in the vast majority of cases as you'd want to make sure that not only the value is the same but also the type of variable is the same.</p>
+                    <h3><code>==</code> double equals</h3>
+                    <p>There is a use for the less strictness of == double equals and this is when we want to check if a varible does not have a value, either null or undefined:</p>
+                    <pre>&gt; let empty;
+                    &gt; empty;
+                    &lt; undefined;&nbsp;
+                    &gt; empty == undefined;
+                    &lt; true
+                    &gt; empty == null;
+                    &lt; true&nbsp;
+                    </pre>
+                    <p>This will return true for both <code>undefined</code> and <code>null</code> .</p>
+                    <pre>&gt; let empty;
+                    &gt; empty;
+                    &lt; undefined;&nbsp;
+                    &gt; empty === undefined;
+                    &lt; true
+                    &gt; empty === null;
+                    &lt; false</pre>
+                    <p>Where as <code>===</code> triple equals will return false for null.</p>
+                    </section>
+                    <section>
+                    <h2>Conclusion</h2>
+                    <ul>
+                        <li><code>=</code> single equals is used for setting the value of variables</li>
+                        <li><code>==</code> double equals &amp; <code>===</code> triple equals are used to check if a variable is set to something</li>
+                        <li><code>===</code> triple equals use this, almost, always to check if a value equals something</li>
+                        <li><code>==</code> double equals use this to check if a variable is either <code>undefined</code> OR <code>null</code></li>
+                    </ul>
+                    </section>
+                </div>
             </article>
         </main>
         <footer class="footer">
