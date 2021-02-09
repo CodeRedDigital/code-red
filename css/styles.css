@@ -213,6 +213,10 @@ code, pre, samp, var, kbd {
     font-family: var(--monospace);
 }
 
+pre {
+    overflow: scroll;
+}
+
 code, samp, var {
     background-color: rgba(227, 222, 222, 1);
     background-color: var(--bon-jour-colour);
@@ -723,6 +727,14 @@ summary {
     color: var(--alabaster-colour);
     border-radius: 0 0 1.44rem 0;
     border-radius: 0 0 var(--s1) 0;
+}
+
+summary + blockquote, summary + details, summary + dl, summary + figure:not([class]), summary + ol, summary + p, summary + table, summary + ul {
+    border-bottom: 2px solid rgba(208, 2, 27, 0.2);
+    border-bottom: 2px solid var(--monza-20);
+    padding-bottom: 1.44rem;
+    padding-bottom: var(--s1);
+
 }
 
 /* cards */
