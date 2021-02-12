@@ -1,3 +1,5 @@
+/* start styles */
+
 :root {
     /* defining scales for sizing elements */
     font-size: 0.875rem;
@@ -239,8 +241,8 @@ kbd {
 /* blockquote */
 
 blockquote {
-    background-color: rgba(227, 222, 222, 0.9);
-    background-color: var(--bon-jour-90);
+    background-color: rgba(227, 222, 222, 0.2);
+    background-color: var(--bon-jour-20);
     margin: 1rem 3.58rem;
     margin: var(--s0) var(--s7);
     padding: 1.44rem;
@@ -249,6 +251,10 @@ blockquote {
     font-family: var(--sans-serif);
     border-radius: 0 0 1.44rem 0;
     border-radius: 0 0 var(--s2) 0;
+    border-right: solid rgba(208, 2, 27, 0.9) 1px;
+    border-bottom: solid rgba(208, 2, 27, 0.9) 1px;
+    border-right: solid var(--monza-90) 1px;
+    border-bottom: solid var(--monza-90) 1px;
 }
 
 blockquote > p {
@@ -272,8 +278,10 @@ blockquote > cite {
 }
 
 blockquote > cite > a {
-    background-color: rgba(227, 222, 222, 0.9);
-    background-color: var(--bon-jour-90);
+    background-color: rgba(227, 222, 222, 0.2);
+    background-color: var(--bon-jour-20);
+    font-weight: 600;
+    font-weight: var(--heavy);
 }
 
 /* lists */
@@ -385,6 +393,10 @@ figcaption a {
 
 figure audio, figure canvas, figure embed, figure iframe, figure img, figure object, figure picture, figure svg, figure video {
     max-height: 75vh;
+    max-width: 100%;
+}
+
+video {
     max-width: 100%;
 }
 
@@ -709,6 +721,8 @@ aside section.toc {
     background-color: rgba(250, 249, 249, 1);
     background-color: var(--alabaster-colour);
     z-index: 50;
+    border-radius: 0 0 2.07rem 0;
+    border-radius: 0 0 var(--s3) 0;
 }
 
 aside section {
@@ -819,6 +833,7 @@ summary + blockquote, summary + details, summary + dl, summary + figure:not([cla
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
  }
  
  .card a {
@@ -1017,7 +1032,7 @@ summary + blockquote, summary + details, summary + dl, summary + figure:not([cla
 /* menu min size */
 
 @media screen and (min-width: 851px) {
-    #hamburger {
+    label#hamburger {
         display: none;
     }
     .header nav ul {
@@ -1048,3 +1063,5 @@ summary + blockquote, summary + details, summary + dl, summary + figure:not([cla
         --ratio: 1.3;
     }
 }
+
+/* end styles */
