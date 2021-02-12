@@ -121,6 +121,8 @@ article section p {
     background-color: var(--niagara-colour);
     margin-bottom: 1.44rem;
     margin-bottom: var(--s2);
+    background-size: contain;
+    background-position: center;
 }  
 
 .page-header.amber {
@@ -217,6 +219,15 @@ code, pre, samp, var, kbd {
 
 pre {
     overflow: scroll;
+    white-space: pre-wrap;
+    background-color: rgba(11, 9, 9, 1);
+    background-color: var(--cod-gray-colour);
+    color: rgba(250, 249, 249, 1);
+    color: var(--alabaster-colour);
+    padding: 1.2rem;
+    padding: var(--s1);
+    border-radius: 0 0 1.44rem 0;
+    border-radius: 0 0 var(--s2) 0;
 }
 
 code, samp, var {
@@ -362,11 +373,12 @@ figure {
     margin: 0;
     overflow-x: auto;
     overflow-y: hidden;
+    margin: 0 0 var(--s1) 0;
 }
 
 figcaption {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-family: var(--sans-serif);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-family: var(--monospace);
     background-color: rgba(208, 2, 27, 1);
     background-color: var(--monza-colour);
     max-width: 100%;
@@ -589,13 +601,14 @@ h2, .two {
     font-weight: 600;
     font-weight: var(--heavy);
 }
+
 h3, .three {
     font-size: 2.49rem;
     font-size: var(--s5);
     font-weight: 600;
     font-weight: var(--heavy);
 }
-h4, .four {
+h4, .four, h2.small {
     font-size: 2.07rem;
     font-size: var(--s4);
     font-weight: 600;
@@ -716,7 +729,7 @@ h6, .six {
 article section > h2,
 aside section.toc {
     top: 50px;
-    top: var(--s6);
+    top: var(--s7);
     position: sticky;
     background-color: rgba(250, 249, 249, 1);
     background-color: var(--alabaster-colour);
